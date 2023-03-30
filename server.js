@@ -1,6 +1,6 @@
 import express from 'express'
 import { createProxyMiddleware } from 'http-proxy-middleware';
-const superApp = express();
+const superApp = express()
 
 const proxy = (target,req,res) => {
     const tmpApp = express();
